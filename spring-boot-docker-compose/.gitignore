@@ -33,3 +33,4 @@ build/
 /container/data/mariadb/data/
 
 .DS_Store
+/.env
