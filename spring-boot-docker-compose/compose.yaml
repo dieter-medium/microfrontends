@@ -11,8 +11,6 @@ services:
       MYSQL_PASSWORD: teama
     volumes:
       - ./container/data/mariadb/data:/var/lib/mysql:cached
-    labels:
-      org.springframework.boot.service-connection: mariadb
 
   redis:
     image: redis:latest
