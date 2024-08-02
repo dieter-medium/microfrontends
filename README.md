@@ -42,6 +42,26 @@ This project demonstrates how to set up a Spring Boot application with Testconta
 
 Both projects contain a `.env.template` that can be copied and modified to create your own `.env` file with the necessary environment variables.
 
+### 3. Spring Boot Devcontainer
+
+This project demonstrates the use of Devcontainers to set up an optimal development environment for Spring Boot applications.
+
+- **Location**: `spring-boot-devcontainer`
+
+#### Prerequisites
+
+- **IntelliJ Ultimate**: This project is designed to work with **IntelliJ Ultimate** for an optimized development setup.
+
+#### How to Use
+
+1. Open the project in IntelliJ Ultimate.
+2. Right-click on the [.devcontainer/devcontainer.json](.devcontainer%2Fdevcontainer.json) folder and select **"Dev
+   Containers >" "Create Dev Containers and mount sources .."**.
+3. Use the **"TeamaApplication DevContainer"** run configuration to start the app.
+
+## Environment Variables
+
+All projects contain a `.env.template` that can be copied and modified to create your own `.env` file with the necessary environment variables.
 
 ---
 
