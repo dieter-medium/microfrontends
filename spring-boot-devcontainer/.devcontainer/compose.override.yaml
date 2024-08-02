@@ -1,0 +1,30 @@
+services:
+  db:
+    ports: !reset
+    network_mode: service:app
+
+  redis:
+    ports: !reset
+    network_mode: service:app
+
+  nginx:
+    ports: !reset
+    network_mode: service:app
+
+  app:
+    build:
+      context: .devcontainer
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "3306:3306"
+      - "6379:6379"
+      - "35729:35729"
+      - "8080:8080"
+    volumes:
+      - ./:/IdeaProjects/teama:cached
+
+    command: sleep infinity
+
+    labels:
+      org.springframework.boot.ignore: true
