@@ -15,14 +15,6 @@ services:
     build:
       context: .devcontainer
       dockerfile: Dockerfile
-    ports:
-      - "80:80"
-      - "3306:3306"
-      - "6379:6379"
-      - "35729:35729"
-      - "8080:8080"
-    volumes:
-      - ./:/IdeaProjects/teama:cached
 
     command: sleep infinity
 
